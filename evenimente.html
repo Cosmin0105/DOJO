@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.css">
+  <title>Nippon Kyokushin Academy - Evenimente</title>
+</head>
+<body>
+<header>
+  <div id="home">
+    <a href="index.html">
+      <h1>Nippon Kyokushin Academy</h1>
+    </a>
+  </div>
+</header>
+<main>
+  <section class="event">
+    <h2 id="event-title-main">BUCHAREST CHALLENGE INTERNATIONAL CUP 2021</h2>
+    <p class="description">
+      S-a încheiat cea de a VIII-a ediție a Bucharest Challenge International Cup! O ediție cu peste 330 de participanți din 33 de cluburi reprezentând 6 țări: Spania, Ucraina, Anglia, Republica Moldova, Turcia și România!!!
+    </p>
+    <p class="period">
+      November 1, 2021
+    </p>
+    <button id="read-more-button" class="read-more">Citește mai mult</button>
+  </section>
+
+  <!-- Pagina de galerie -->
+  <section class="gallery" id="gallery-section" style="display:none;">
+    <p class="gallery-period">
+      November 1, 2021
+    </p>
+    <p class="gallery-description">
+      S-a încheiat cea de a VIII-a ediție a Bucharest Challenge International Cup! O ediție cu peste 330 de participanți din 33 de cluburi reprezentând 6 țări: Spania, Ucraina, Anglia, Republica Moldova, Turcia și România!!!
+    </p>
+    <!-- Popup pentru imagine -->
+   <!-- <div id="image-popup" class="popup">
+      <span class="close">&times;</span>
+      <div class="popup-content">
+        <img src="" alt="Popup Image">
+      </div>
+    </div> --->
+    <div class="image-grid" id="image-grid">
+
+    </div>
+    <div class="pagination">
+      <button class="page-link active" data-page="1">1</button>
+      <button class="page-link" data-page="2">2</button>
+      <button class="page-link" data-page="3">3</button>
+    </div>
+    <div class="video-container">
+      <video id="event-video" controls>
+        <source src="../img/BUCHAREST CHALLENGE CUP - 2021.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button id="back-button" class="read-more">Înapoi</button>
+  </section>
+
+
+
+</main>
+
+<!-- JavaScript pentru a face titlul să acționeze ca butonul și pentru popup -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var button = document.getElementById('read-more-button');
+    var gallerySection = document.getElementById('gallery-section');
+    var backButton = document.getElementById('back-button');
+    var eventSection = document.querySelector('.event');
+    var imagesContainer = document.getElementById('image-grid');
+    var popup = document.getElementById('image-popup');
+    var popupContent = document.querySelector('.popup-content img');
+    var close = document.querySelector('.popup .close');
+    var video = document.getElementById('event-video');
+
+    button.addEventListener('click', function() {
+      eventSection.style.display = 'none';
+      gallerySection.style.display = 'block';
+      loadPage(1); // Încarcă pagina 1 inițial
+      var titleElement = document.createElement('h2');
+      titleElement.id = 'event-title';
+      titleElement.textContent = 'BUCHAREST CHALLENGE INTERNATIONAL CUP 2021';
+      gallerySection.insertBefore(titleElement, gallerySection.firstChild);
+    });
+
+    backButton.addEventListener('click', function() {
+      gallerySection.style.display = 'none';
+      eventSection.style.display = 'block';
+      video.pause();
+      video.currentTime = 0; // Opțional: resetează videoclipul la început
+    });
+
+    function loadPage(pageNumber) {
+      var images = [];
+      imagesContainer.innerHTML = '';
+
+      if (pageNumber === 1) {
+        images = [
+          "../img/thumbs_247974026_1556202281380983_1189922066212831718_n.jpg",
+          "../img/thumbs_247979777_1556202014714343_2892260719943342211_n.jpg",
+          "../img/thumbs_247987956_1556202284714316_1729167997020428241_n.jpg",
+          "../img/thumbs_2X1A0393.jpg",
+          "../img/thumbs_2X1A0437.jpg",
+          "../img/thumbs_2X1A2566.jpg",
+          "../img/thumbs_2X1A0438.jpg",
+          "../img/thumbs_247979796_1556203368047541_6133719700615068214_n.jpg",
+          "../img/thumbs_248014254_1556201831381028_4577140746367926113_n.jpg",
+          "../img/thumbs_248039472_1556202378047640_4305616017889456429_n.jpg",
+          "../img/thumbs_248035157_1556201901381021_4078693089378264757_n.jpg",
+          "../img/thumbs_248043586_1556201898047688_8618979897561222873_n.jpg",
+          "../img/thumbs_2X1A0439.jpg",
+          "../img/thumbs_2X1A1062.jpg",
+          "../img/thumbs_248069574_1556202118047666_4802413139694592897_n.jpg",
+          "../img/thumbs_248085470_1556202208047657_6649389030287562030_n.jpg",
+          "../img/thumbs_248159605_1556201801381031_3853671734765832054_n.jpg",
+          "../img/thumbs_248163243_1556202688047609_1288247420571903180_n.jpg"
+        ];
+      } else if (pageNumber === 2) {
+        images = [
+          "../img/thumbs_248182125_1556202521380959_1329311662015415620_n.jpg",
+          "../img/thumbs_248722760_1556203094714235_56302465887686452_n.jpg",
+          "../img/thumbs_248683354_1556202274714317_6321270652096155819_n.jpg",
+          "../img/thumbs_248665565_1556202771380934_1155495135617959682_n.jpg",
+          "../img/thumbs_248584792_1556202828047595_6997546882155924197_n.jpg",
+          "../img/thumbs_248446312_1556202338047644_246279351362069279_n.jpg",
+          "../img/thumbs_248438631_1556202658047612_6745795108476019463_n.jpg",
+          "../img/thumbs_248446036_1556202121380999_3968858926502919013_n.jpg",
+          "../img/thumbs_248422129_1556201894714355_4504262860323208623_n.jpg",
+          "../img/thumbs_248410531_1556202001381011_5000468026325629206_n.jpg",
+          "../img/thumbs_248369356_1556202148047663_3264937939121040237_n.jpg",
+          "../img/thumbs_248399741_1556202524714292_4880570743816041733_n.jpg",
+          "../img/thumbs_248362113_1556202924714252_4099589647328978087_n.jpg",
+          "../img/thumbs_248352379_1556202431380968_7443234589921017414_n.jpg",
+          "../img/thumbs_248341976_1556202188047659_1199293038022849997_n.jpg",
+          "../img/thumbs_248337648_1556203211380890_4654649374474594510_n.jpg",
+          "../img/thumbs_248233043_1556202018047676_1426564746779772441_n.jpg",
+          "../img/thumbs_248197906_1556203694714175_6438718368527274614_n.jpg",
+          "../img/thumbs_248326507_1556202988047579_4117362132449010907_n.jpg",
+          "../img/thumbs_248172270_1556202511380960_8945873458620560211_n.jpg"
+        ];
+      } else if (pageNumber === 3) {
+        images = [
+          "../img/thumbs_20211022_171806.jpg",
+          "../img/thumbs_20211022_162116.jpg",
+          "../img/thumbs_20211022_170604.jpg",
+          "../img/thumbs_248892079_1556202714714273_1652546675652465599_n.jpg",
+          "../img/thumbs_248891748_1556201908047687_9065729920112807879_n.jpg"
+        ];
+      }
+
+      images.forEach(function(src) {
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = "Image";
+        img.addEventListener('click', function() {
+          popup.style.display = 'flex';
+          popupContent.src = src;
+        });
+        imagesContainer.appendChild(img);
+      });
+
+      // Actualizează butoanele de paginare
+      document.querySelectorAll('.page-link').forEach(function(link) {
+        link.classList.remove('active');
+      });
+      document.querySelector('.page-link[data-page="' + pageNumber + '"]').classList.add('active');
+    }
+
+    // Adăugați evenimente de click pentru butoanele de paginare
+    var pageLinks = document.querySelectorAll('.page-link');
+    pageLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        var pageNumber = parseInt(this.getAttribute('data-page'));
+        loadPage(pageNumber);
+      });
+    });
+
+    // Închide popup-ul
+    close.addEventListener('click', function() {
+      popup.style.display = 'none';
+    });
+
+    // Închide popup-ul când se face clic în afara imaginii
+    window.addEventListener('click', function(event) {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  });
+
+</script>
+</body>
+</html>

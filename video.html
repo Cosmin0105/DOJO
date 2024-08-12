@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+
+<h3 class="heading">Meciuri</h3>
+
+<div class="container">
+  <div class="main-video">
+    <div class="video">
+      <video src="../img/Clip Promo final.mp4" controls muted autoplay></video>
+      <h3 class="title">01. Prezentare NIIPON KYOKUSHIN ACADEMY </h3>
+      <p class="description">Bun venit la prezentarea oficială a NIIPON KYOKUSHIN ACADEMY! Aici veți descoperi filozofia, tehnicile și valorile care stau la baza acestui stil de arte marțiale, cunoscut pentru rigoare și disciplina sa. În acest video, vom explora istoria academiei, structura antrenamentelor și impactul pe care l-a avut asupra comunității noastre de-a lungul anilor. Perfect pentru cei care doresc să afle mai multe despre Kyokushin și despre cum acest stil de karate poate contribui la dezvoltarea personală.</p>
+    </div>
+  </div>
+
+  <div class="video-list">
+    <div class="vid active">
+      <video src="../img/Clip Promo final.mp4" controls muted autoplay></video>
+      <h3 class="title">01. Prezentare NIIPON KYOKUSHIN ACADEMY</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/Nippon Kyokushin Academy Galati Video.mp4" controls muted autoplay></video>
+      <h3 class="title">02. Nippon Kyokushin Academy Galati</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/BUCHAREST CHALLENGE CUP - 2021.mp4" controls muted autoplay></video>
+      <h3 class="title">03. BUCHAREST CHALLENGE CUP - 2021</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/Nippon Kyokushin Academy Galati Video 2.mp4" controls muted autoplay></video>
+      <h3 class="title">04. Nippon Kyokushin Academy</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/Promovare Nippon Kyokushin Academy.mp4" controls muted autoplay></video>
+      <h3 class="title">05. Promovare Nippon Kyokushin Academy</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/Babadag semifinala casca rosie.mp4" controls muted autoplay></video>
+      <h3 class="title">06. Semifinala Babadag</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/finala tn.mp4" controls muted autoplay></video>
+      <h3 class="title">07. Finala Babadag TN</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/kiril semifinala.mp4" controls muted autoplay></video>
+      <h3 class="title">08. Kiril Semifinala</h3>
+    </div>
+    <div class="vid">
+      <video src="../img/kiril finala.mp4" controls muted autoplay></video>
+      <h3 class="title">09. Kiril Finala</h3>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+<script>
+  let listVideo = document.querySelectorAll('.video-list .vid');
+  let mainVideo = document.querySelector('.main-video video');
+  let title = document.querySelector('.main-video .title');
+  let description = document.querySelector('.main-video .description');
+
+  listVideo.forEach(video => {
+    video.onclick = () => {
+      listVideo.forEach(vid => vid.classList.remove('active'));
+      video.classList.add('active');
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+
+      // Aici poți adăuga descrierile pentru fiecare video
+      let desc = "";
+      switch(text) {
+        case "01. Prezentare NIIPON KYOKUSHIN ACADEMY":
+          desc = "Bun venit la prezentarea oficială a NIIPON KYOKUSHIN ACADEMY! Aici veți descoperi filozofia, tehnicile și valorile care stau la baza acestui stil de arte marțiale, cunoscut pentru rigoare și disciplina sa. În acest video, vom explora istoria academiei, structura antrenamentelor și impactul pe care l-a avut asupra comunității noastre de-a lungul anilor. Perfect pentru cei care doresc să afle mai multe despre Kyokushin și despre cum acest stil de karate poate contribui la dezvoltarea personală.";
+          break;
+        case "02. Nippon Kyokushin Academy Galati":
+          desc = "Clip de prezentare Nippon Kyokushin Academy Galati.";
+          break;
+        case "03. BUCHAREST CHALLENGE CUP - 2021":
+          desc = "BUCHAREST CHALLENGE CUP - 2021.";
+          break;
+        case "04.Nippon Kyokushin Academy.":
+          desc = "Nippon Kyokushin Academy.";
+          break;
+        case "05. Promovare Nippon Kyokushin Academy":
+          desc = "Promovare Nippon Kyokushin Academy.";
+          break;
+        case "06.  Semifinala Babadag":
+          desc = " Semifinala Babadag";
+          break;
+        case "07.  Finala Babadag TN":
+          desc = " Finala Babadag TN";
+          break;
+        case "08.  Kiril Semifinala":
+          desc = " Kiril Semifinala";
+          break;
+        case "09. Kiril Finala":
+          desc = " Kiril Finala";
+          break;
+
+      }
+
+      description.innerHTML = desc;
+    };
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="../js/jquery.js"></script>
+  <title>Nippon Kyokushin Academy</title>
+</head>
+<body>
+
+<!-- header section start -->
+
+<header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Acasa</a></li>
+      <li><a href="#feature">Caracteristicile Noastre</a></li>
+      <li><a href="#about">Despre noi</a></li>
+      <li><a href="#gallery">Galerie</a></li>
+      <li><a href="evenimente2.html">Evenimente</a></li>
+      <li><a href="video.html">Meciuri</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="fas fa-bars"></div>
+
+  <div class="logo">
+    <a href="#"><h1><span>Nippon</span>Kyokushin</h1></a>
+  </div>
+
+</header>
+
+<!-- header section end -->
+
+
+<!-- home sectin starts -->
+
+<section id="home">
+
+  <h1>Alege sa te antrenezi in locul unde se nasc campionii </h1>
+  <a href="#contact"><button> Alătură-te nouă </button></a>
+
+<!---
+  <div class="icons">
+    <a href="https://www.facebook.com/profile.php?id=100057417250974" class="fab fa-facebook"></a>
+    <a href="https://www.facebook.com/profile.php?id=100057164841928" class="fab fa-facebook" style="color: #E6022D;"></a>
+    <a href="https://frkk.ro" class="fas fa-globe" ></a>
+
+  </div>
+
+--->
+</section>
+
+<!-- home sectin ends -->
+
+<!-- feature section starts -->
+
+<section id="feature">
+
+  <h1>Caracteristicile Noastre</h1>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="../img/p1.jpg" alt="">
+      <div class="content">
+        <h1>Antrenamente profesioniste </h1>
+        <p>Antrenamentele noastre profesioniste sunt concepute pentru a maximiza forța și performanța elevilor nostri.</p>
+        <a href="#" class="read-more-btn"><button>Citeste mai mult</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../img/p2.jpg" alt="">
+      <div class="content">
+        <h1>Antrenori Experimentati</h1>
+        <p>Antrenorii noștri certificați oferă instruire personalizată pentru performanțe de top.</p>
+        <a href="#" class = "view-trainers-btn"><button>Citeste mai mult</button></a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../img/p3.jpg" alt="">
+      <div class="content">
+        <h1>Disciplină și Respect</h1>
+        <p>La Nippon Kyokushin Academy, cultivăm o cultură a disciplinei și respectului, fundamentale în practica karate-ului.</p>
+        <a href="#" class="read-more-btn-disc"><button>Citeste mai mult</button></a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Modal for Trainers -->
+<div id="trainersModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="trainer-images">
+      <img src="../img/MOROIANU_GABRIEL_3_DAN.jpeg" alt="Trainer 3" data-trainer-id="3" class="trainer-image">
+      <img src="../img/Musat_marian_1_DAN.jpeg" alt="Trainer 4" data-trainer-id="4" class="trainer-image">
+      <img src="../img/FLOREA_SABIN_1_DAN.jpeg" alt="Trainer 2" data-trainer-id="2" class="trainer-image">
+      <img src="../img/COLISNICENCU_DANIEL_1_DAN.jpeg" alt="Trainer 1" data-trainer-id="1" class="trainer-image">
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Trainer Details -->
+<div id="trainerDetailModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="trainer-detail">
+      <!-- Trainer details will be dynamically inserted here -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Detailed Content -->
+<div id="detailedContentModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="detailed-content">
+      <!-- Aici va fi inserat conținutul detaliat dinamic -->
+    </div>
+  </div>
+</div>
+<!-- feature section ends -->
+
+
+<!-- about section starts -->
+
+<section id="about">
+
+  <div class="image">
+    <img src="../img/pic.jpg" alt="">
+  </div>
+
+  <div class="content">
+    <h1>De ce să ne alegi pe noi?</h1>
+    <p>
+      La Nippon Kyokushin Academy, ne dedicăm sănătății și dezvoltării tale personale. Iată de ce să alegi să antrenezi cu noi:
+      <br><br>
+      - Experiență vastă și profesionalism în arta karate-ului.
+      <br>
+      - Instruire personalizată pentru fiecare nivel de experiență.
+      <br>
+      - Atmosferă prietenoasă și susținere continuă în atingerea obiectivelor tale.
+      <br>
+      - Oportunități de competiții și progrese constante.
+      <br><br>
+      Descoperă cum putem împreună să atingem potențialul tău maxim. Te așteptăm la Nippon Kyokushin Academy!
+    </p>
+
+    <h1>
+      Academia noastra include :
+    </h1>
+
+    <div class="buttons">
+      <a href="#" id="btn-dojo"><button>Dojo</button></a>
+      <a href="#" id="btn-kimono"><button>Kimono</button></a>
+      <a href="#" id="btn-obi"><button>Obi</button></a>
+      <a href="#" id="btn-focus_pads"><button>Focus Pads</button></a>
+      <a href="#" id="btn-makiwara"><button>Makiwara</button></a>
+
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- about section starts -->
+
+
+<!-- gallery section starts -->
+
+<section id="gallery">
+
+  <h1>Momente unice ale acedemiei noastre </h1>
+
+  <div class="image-container">
+
+    <div class="image">
+      <img src="../img/img1.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal1" ><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/trofeu1.jpg" alt="">
+        <img src="../img/trofeu2.jpg" alt="">
+        <img src="../img/trofeu3.jpg" alt="">
+        <img src="../img/trofeu4.jpg" alt="">
+        <img src="../img/trofeu5.jpg" alt="">
+        <img src="../img/trofeu6.jpg" alt="">
+        <img src="../img/trofeu7.jpg" alt="">
+        <img src="../img/trofeu8.jpg" alt="">
+        <img src="../img/trofeu9.jpg" alt="">
+        <img src="../img/trofeu10.jpg" alt="">
+        <img src="../img/trofeu11.jpg" alt="">
+        <img src="../img/trofeu12.jpg" alt="">
+        <img src="../img/trofeu13.jpg" alt="">
+        <img src="../img/trofeu14.jpg" alt="">
+        <img src="../img/trofeu15.jpg" alt="">
+        <img src="../img/trofeu16.jpg" alt="">
+        <img src="../img/trofeu17.jpg" alt="">
+        <img src="../img/trofeu18.jpg" alt="">
+
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="../img/img2.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal2"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/antrenament1.jpg" alt="">
+        <img src="../img/antrenament2.jpg" alt="">
+        <img src="../img/antrenament3.jpg" alt="">
+        <img src="../img/antrenament4.jpg" alt="">
+        <img src="../img/antrenament5.jpg" alt="">
+        <img src="../img/antrenament6.jpg" alt="">
+        <img src="../img/antrenament7.jpg" alt="">
+        <img src="../img/antrenament8.jpg" alt="">
+        <img src="../img/antrenament9.jpg" alt="">
+        <!-- Adaugă mai multe imagini aici -->
+      </div>
+    </div>
+
+
+    <div class="image">
+      <img src="../img/img3.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal3"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/plaja1.jpg" alt="">
+        <img src="../img/plaja2.jpg" alt="">
+        <img src="../img/plaja3.jpg" alt="">
+        <img src="../img/plaja4.jpg" alt="">
+        <img src="../img/plaja5.jpg" alt="">
+        <img src="../img/plaja6.jpg" alt="">
+        <img src="../img/plaja7.jpg" alt="">
+        <img src="../img/plaja8.jpg" alt="">
+        <img src="../img/plaja9.jpg" alt="">
+        <img src="../img/plaja10.jpg" alt="">
+        <img src="../img/plaja11.jpg" alt="">
+        <img src="../img/plaja12.jpg" alt="">
+        <img src="../img/plaja13.jpg" alt="">
+        <img src="../img/plaja14.jpg" alt="">
+        <img src="../img/plaja15.jpg" alt="">
+        <img src="../img/plaja16.jpg" alt="">
+        <img src="../img/plaja17.jpg" alt="">
+        <img src="../img/plaja18.jpg" alt="">
+        <img src="../img/plaja19.jpg" alt="">
+
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="../img/img4.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal4"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/aer1.jpg" alt="">
+        <img src="../img/aer2.jpg" alt="">
+        <img src="../img/aer3.jpg" alt="">
+        <img src="../img/aer4.jpg" alt="">
+        <img src="../img/aer5.jpg" alt="">
+        <img src="../img/aer6.jpg" alt="">
+        <img src="../img/aer7.jpg" alt="">
+        <img src="../img/aer8.jpg" alt="">
+        <img src="../img/aer9.jpg" alt="">
+        <img src="../img/aer10.jpg" alt="">
+        <img src="../img/aer11.jpg" alt="">
+        <img src="../img/aer12.jpg" alt="">
+
+
+      </div>
+    </div>
+
+
+
+    <div class="image">
+      <img src="../img/img5.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal5"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/copii1.jpg" alt="">
+        <img src="../img/copii2.jpg" alt="">
+        <img src="../img/copii3.jpg" alt="">
+        <img src="../img/copii4.jpg" alt="">
+        <img src="../img/copii5.jpg" alt="">
+        <img src="../img/copii6.jpg" alt="">
+        <img src="../img/copii7.jpg" alt="">
+        <img src="../img/copii8.jpg" alt="">
+        <img src="../img/copii9.jpg" alt="">
+        <img src="../img/copii10.jpg" alt="">
+        <img src="../img/copii11.jpg" alt="">
+      </div>
+    </div>
+
+
+
+
+    <div class="image">
+      <img src="../img/img6.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal6"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal6" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/premii1.jpg" alt="">
+        <img src="../img/premii2.jpg" alt="">
+        <img src="../img/premii3.jpg" alt="">
+        <img src="../img/premii4.jpg" alt="">
+        <img src="../img/premii5.jpg" alt="">
+        <img src="../img/premii6.jpg" alt="">
+        <img src="../img/premii7.jpg" alt="">
+        <img src="../img/premii8.jpg" alt="">
+        <img src="../img/premii9.jpg" alt="">
+        <img src="../img/premii10.jpg" alt="">
+        <img src="../img/premii11.jpg" alt="">
+        <img src="../img/premii12.jpg" alt="">
+        <img src="../img/premii13.jpg" alt="">
+        <img src="../img/premii14.jpg" alt="">
+        <img src="../img/premii15.jpg" alt="">
+        <img src="../img/premii16.jpg" alt="">
+        <img src="../img/premii17.jpg" alt="">
+
+
+      </div>
+    </div>
+
+
+    <div class="image">
+      <img src="../img/DSC_0652.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal7"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal7" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/DSC_0365.jpg" alt="">
+        <img src="../img/DSC_0382.jpg" alt="">
+        <img src="../img/DSC_0389.jpg" alt="">
+        <img src="../img/DSC_0419.jpg" alt="">
+        <img src="../img/DSC_0423.jpg" alt="">
+        <img src="../img/DSC_0430.jpg" alt="">
+        <img src="../img/DSC_0432.jpg" alt="">
+        <img src="../img/DSC_0460.jpg" alt="">
+        <img src="../img/DSC_0522.jpg" alt="">
+        <img src="../img/DSC_0528.jpg" alt="">
+        <img src="../img/DSC_0530.jpg" alt="">
+        <img src="../img/DSC_0536.jpg" alt="">
+        <img src="../img/DSC_0549.jpg" alt="">
+        <img src="../img/DSC_0553.jpg" alt="">
+        <img src="../img/DSC_0615.jpg" alt="">
+        <img src="../img/DSC_0634.jpg" alt="">
+        <img src="../img/DSC_0652.jpg" alt="">
+        <img src="../img/DSC_0666.jpg" alt="">
+        <img src="../img/DSC_0721.jpg" alt="">
+        <img src="../img/DSC_7431.jpg" alt="">
+        <img src="../img/DSC_7425.jpg" alt="">
+        <img src="../img/DSC_7437.jpg" alt="">
+        <img src="../img/DSC_7466.jpg" alt="">
+        <img src="../img/DSC_7489.jpg" alt="">
+        <img src="../img/DSC_7697.jpg" alt="">
+        <img src="../img/DSC_7719.jpg" alt="">
+
+
+
+      </div>
+    </div>
+
+
+    <div class="image">
+      <img src="../img/IMG-20240720-WA0024.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal8"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal8" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/IMG-20240720-WA0010.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0038.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0044.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0136.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0139.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0141.jpg" alt="">
+        <img src="../img/IMG-20240720-WA0159.jpg" alt="">
+        <img src="../img/IMG-20240721-WA0078.jpg" alt="">
+        <img src="../img/IMG-20240721-WA0084.jpg" alt="">
+        <img src="../img/IMG-20240721-WA0198.jpg" alt="">
+        <img src="../img/IMG-20240721-WA0226.jpg" alt="">
+        <img src="../img/IMG-20240721-WA0249.jpg" alt="">
+        <img src="../img/IMG-20240723-WA0013.jpg" alt="">
+        <img src="../img/IMG-20240723-WA0017.jpg" alt="">
+        <img src="../img/IMG-20240723-WA0026.jpg" alt="">
+        <img src="../img/IMG-20240723-WA0042.jpg" alt="">
+      </div>
+    </div>
+
+
+    <div class="image">
+      <img src="../img/WhatsApp Image 2024-07-09 at 06.40.05_3ae8ce62.jpg" alt="">
+      <div class="info">
+        <a href="#" class="view-more-btn"  data-modal-id="myModal9"><button>Vezi mai mult!</button></a>
+      </div>
+    </div>
+    <div id="myModal9" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="../img/WhatsApp Image 2024-07-09 at 06.40.05_3ae8ce62.jpg" alt="">
+        <img src="../img/WhatsApp Image 2024-07-09 at 06.40.08_fb2ce9a8.jpg" alt="">
+        <img src="../img/WhatsApp Image 2024-07-10 at 12.36.11_410e0099.jpg" alt="">
+        <img src="../img/WhatsApp Image 2024-07-10 at 12.42.00_553167e9.jpg" alt="">
+
+      </div>
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- gallery section ends -->
+
+
+
+<!-- contact us section starts -->
+
+<section id="contact">
+  <form action="https://formsubmit.co/df7ed1bb6c004c93d4eb24a76dc4caf3" method="POST" enctype="multipart/form-data">
+    <h1>Trimite un mail și te vom contacta noi!</h1>
+    <input type="text" name="Name" required placeholder="Name">
+    <input type="email" name="Email" required placeholder="Email"> <!-- Corrected field name -->
+    <input type="tel" name="Numar" required placeholder="Number">
+    <textarea name="message" required placeholder="Mesajul tău" cols="30" rows="10"></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="submit" value="Submit">
+    <!-- Optional hidden fields for extra configurations -->
+  </form>
+
+
+  <div class="image">
+    <img src="man.png" alt="">
+  </div>
+
+</section>
+
+
+
+
+<!-- contact us section ends -->
+
+<!-- footer sectin starts -->
+
+<section id="footer">
+
+  <div class="footer-container">
+
+    <div class="brand">
+      <div class="logo">
+        <a href="#"><h1><span>NIPPON</span>KYOKUSHIN</h1></a>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100057417250974" class="fab fa-facebook" data-text="facebook braila"></a>
+        <a href="https://www.facebook.com/profile.php?id=100057164841928" class="fab fa-facebook" data-text="facebook galati"></a>
+        <a href="https://frkk.ro" class="fas fa-globe" data-text="Federaţia Română de Karate Kyokushin"></a>
+
+      </div>
+    </div>
+
+    <div class="contact-info">
+      <div class="info">
+        <a href="https://www.google.com/maps/place/Bulevardul+Dorobanților+404,+Brăila+817181/@45.2753142,27.9550039,17z/data=!3m1!4b1!4m6!3m5!1s0x40b729e07d2678a5:0x4f7d7a51b122efa2!8m2!3d45.2753105!4d27.9575788!16s%2Fg%2F11hhsywgsq?authuser=0&entry=ttu" class="fas fa-map-marker-alt" data-text="Bul Dorobantilor 404 , Braila, Romania"></a>
+        <a href="mailto:nipponkyokushinacademy@gmail.com" class="fas fa-envelope" data-text="nipponkyokushinacademy@gmail.com"></a>
+        <a href="tel:+40745335615" class="fas fa-phone" data-text="0745 335 615"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer sectin ends -->
+
+
+<!-- script starts -->
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.fa-bars').click(function(){
+      $(this).toggleClass('fa-times');
+      $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+      $('.fa-bars').removeClass('fa-times');
+      $('nav').removeClass('nav-toggle');
+    });
+
+
+    $(window).scroll(function(){
+      if($(window).scrollTop() >= 20){
+        $('header').addClass('active');
+      }else{
+        $('header').removeClass('active');
+      }
+
+    });
+// Când se apasă butonul "View more!"
+    $('.view-more-btn').click(function(e) {
+      e.preventDefault();
+      var modalId = $(this).data('modal-id');
+      $('#' + modalId).css('display', 'block'); // Afișează fereastra modală asociată
+    });
+
+    // Când se apasă pe iconița de închidere
+    $('.close').click(function() {
+      $(this).closest('.modal').css('display', 'none'); // Ascunde fereastra modală
+    });
+
+    // Când utilizatorul apasă pe orice altceva în afara ferestrei modale, închide fereastra modală
+    $(window).click(function(event) {
+      if ($(event.target).hasClass('modal')) {
+        $(event.target).css('display', 'none'); // Ascunde fereastra modală
+      }
+    });
+
+
+  });
+
+  $(document).ready(function(){
+    // Open modal for viewing trainers
+    $('.view-trainers-btn').click(function(){
+      $('#trainersModal').show();
+    });
+
+    // Close modal
+    $('.close').click(function(){
+      $(this).parents('.modal').hide();
+    });
+
+    // Display trainer details on image click
+    $('.trainer-images img').click(function(){
+      var trainerId = $(this).data('trainer-id');
+      var trainerDetails = '';
+
+      switch(trainerId) {
+        case 1:
+          trainerDetails = '<h2>Colisnicencu Daniel</h2><p>Colisnicencu Daniel nascut  pe 16 Noiembrie in GALATI.\n' +
+            '-In anul 2010 face primul pas intr-o sala de karate kyokushin\n' +
+            'S-a dovedit sa nu fie un simplu elev ce vine se antreneaza o anumita perioada apoi renunta la a mai se antrena.\n' +
+            'Daniel este perseverant si muncitor,iar acest lucru il determina ca dupa ani de zile de antrenamente si pregatire intensa sa sustina examenul de SHO DAN ( 1 DAN ) in anul 2019 in Eforie Sud in cadru Taberei de Vara organizata anual de Federatia Romana de Karate Kyokushin si examinatorul acestui examen a fost SHINGERU TABATA  8 DAN.\n' +
+            'Cu care timp de 5 zile s-au antrenat alaturi de maestrul SHINGERU TABATA  majoritatea sportivilor din cadrul federatiei.\n</p>';
+          break;
+        case 2:
+          trainerDetails = '<h2>Florea Sabin</h2><p>FLOREA SABIN  nascut pe 18 Iunie 2004 in Braila\n' +
+            '-In anul 2012 Sabin fiind inca un copil pe vremea aceea decide  sa practice arte martiale,respective Karate Kyokushin.\n' +
+            'Sabin se dovedeste a fi un copil extreme de ambitios,incepe destul dedevreme sa participle la competitii de Karate kyokushin,ajungand pe parcusul anilor sa obtina rezultate notabile atat la nivel national cand si la competitii internationale.\n' +
+            'El nu inceteaza sa  demonstreze lui insusi ca acesta este doar inceputul,iar incepand inca de la gradul de centura verde “3KYU”incepe sa fie un om de baza a lui Sensei MOROIANU GABRIEL.\n' +
+            'Sensei Moroianu avand mari asteptari de la acesta incepe sa ii dea sarcini pe care Sabin le indeplineste cu success,fapt pentru care Senseiul lui ii ofera incredearea deplina hotarand ca o data ce a obtinut centura maro sa sustina in cadrul Federatiei Romane de Karate Kyokushin si examenul de instructor asistent.\n' +
+            '-Dupa ce acesta a obtinut si licenta de instructor in cadrul clubului si al federatiei,Sensei Moroianu ii incredinteaza acestuia din cand in cand grupa de incepatori avandu-ul sub supraveghere,Sabin isi ia munca in serios.\n' +
+            '-In anu 2022 la Bucuresti Sabin sustine examenul “maturitatii” in karate Kyokushin,examenul de SHO DAN (1DAN ) in fata unei comisii  a Federatiei Romane de Karate Kyokushin,Comisia de examinare fiind compusa din SHIHAN Gruia Docan 5 DAN-Shihan Potcovuta Aurel 5 DAN-Sensei Panuta Nicolaie 4 DAN—Sensei Stan MARIN 4 DAN\n' +
+            'Dupa ani de pregatire,Florea Sabin dupa terminarea liceului decide ca in anul 2024 sa sustina examenul de admitere la scoala de subofiteri jadarmi.\n' +
+            'Pregatirea lui din scoala si din artele martiale l-au ajutat sa promoveze cu prio examenele scrise si cele fizice pentru admiterea la scoala de subofiteri.\n' +
+            '\n' +
+            '\n</p>';
+          break;
+        case 3:
+          trainerDetails = '<h2>Moroianu Gabriel </h2><p>Moroianu Gabriel nascut pe 04 Octombrie 1992 a inceput practicarea artelor martiale respective Karate kyokushin in anul 1997 la o varsta foarte frageda sub indrumarea lui Sensei Panuta Nicolaie.\n' +
+            '-In anul 2001 s-a mutat cu domiciliul si familia in Judetul Galati,dar acest lucru nu l-a determinat sa renunte la ce avea sa fie pasiunea vietii sale si a continuat sa se antreeze de aceasta data sub indrumarea lui Sensei Fechet Sorin\n' +
+            '-Inncepand cu anul 2010 a reluat legatura cu Sensei Panuta Nicolaie ce s-a reintors din America unde acesta a fost pentru o perioada de aproximativ  7 ani.\n' +
+            '-In anul 2011,la 14 ani de cand  a calcat in sala de Karate Kyokushin a ales sa inceapa sa impartaseasca noilor geeratii din cunostintele sala.\n' +
+            '  Primul Dojo deschis a fost in Galati,iar pe parcursul anilor deschizand  si in Braila.\n' +
+            '-In anul 2013 a sustinut examenul de SHOO DA ( 1 DAN) centura neagra cu 1 DAN la Tulcea,presedintele comisiei de examinare fiind Shihan Yoshikaxu koi centura neagra 6 DAN membru ala organizatiei international de Karate Kyokushin I.K.O KYOKUSHIN KAI KAN UNION.\n' +
+            '-In anul 2017 a sustinut examenul de NI DAN (2 DAN) examen ce  avut loc tot la Tulcea de data asta examen sustinut in fata unei comisii formate din doi mari maestrii ai Japoniei si ai organizatiei internationale de Karate Kyokushin  I.K.O KYOKUSHIN KAI KAN UNION.\n' +
+            '-Shihan   SHINGERU TABATA  8 DAN\n' +
+            '-Shihan  Yasuhiro Shichinohe  8 DAN\n' +
+            '-In anul 2022 a sustinut examenul de 3 dan si devenind Sensei ,examen sustinul in Bucuresti,examen organizat de Federatia Romana de Karate Kyokushin.Comisia de examinare fiind compusa din SHIHAN Gruia Docan 5 DAN-Shihan Potcovuta Aurel 5 DAN-Sensei Panuta Nicolaie 4 DAN—Sensei Stan MARIN 4 DAN\n</p>';
+          break;
+        case 4:
+          trainerDetails = '<h2>Musat Marian</h2><p>MUSAT MARIAN nascut pe 19 Septembrie 1977 in Braila.\n' +
+            '-In anul 1992 a avut primul concat cu artele martiala,incepand sa practice Karate Shotocan pana in anul 1998.\n' +
+            '-In anul 2014 incepe sa reia antrenamentele de arte martiale dar de data aceasta incepe practicarea de Karate Kyokushin.\n' +
+            'Tinand ritmul constant de antrenamente ajunge ca in ajul 2022 sa sustina examenul de SHO DAN              ( 1 DAN) la Bucresti  in fata unei comisii  a Federatiei Romane de Karate Kyokushin,Comisia de examinare fiind compusa din SHIHAN Gruia Docan 5 DAN-Shihan Potcovuta Aurel 5 DAN-Sensei Panuta Nicolaie 4 DAN—Sensei Stan MARIN 4 DAN\n' +
+            '\n</p>';
+          break;
+        default:
+          trainerDetails = '<h2>Unknown Trainer</h2><p>No details available.</p>';
+      }
+
+      $('.trainer-detail').html(trainerDetails);
+      $('#trainerDetailModal').show();
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    // Deschide fereastra modală când se apasă pe butonul "Citește mai mult"
+    $('.read-more-btn').click(function(){
+      // Aici poți modifica conținutul în funcție de necesități
+      var detailedContent = '<h2>Antrenamente profesioniste</h2>' +
+        '<p>Noi oferim antrenamente profesioniste adaptate nevoilor fiecărui participant. Acestea se desfășoară în săli moderne, echipate cu cele mai noi echipamente pentru a asigura un mediu optim de învățare și progres.</p>' +
+        '<h3>Unde se țin antrenamentele?</h3>' +
+        '<p>Antrenamentele au loc în diverse locații, inclusiv în Galati și Braila, în săli special amenajate pentru arte marțiale.</p>' +
+        '<h3>Traineri experimentați</h3>' +
+        '<p>Echipa noastră este formată din traineri cu experiență vastă în domeniul artelor marțiale, inclusiv Sensei Moroianu Gabriel și alți instructori cu grade ridicate de Dan.</p>' +
+        '<p>Trainerii noștri sunt dedicați și pregătiți să ofere îndrumare și suport personalizat fiecărui participant.</p>' +
+        '<p>Vă invităm să faceți primul pas către dezvoltarea personală și performanța maximă alături de noi!</p>';
+
+      // Setează conținutul în fereastra modală
+      $('.detailed-content').html(detailedContent);
+
+      // Deschide fereastra modală
+      $('#detailedContentModal').show();
+    });
+
+    // Închide fereastra modală când se apasă pe butonul "Închide" sau în afara ferestrei
+    $('.close').click(function(){
+      $(this).parents('.modal').hide();
+    });
+
+    $(window).click(function(event) {
+      if (event.target.id === 'detailedContentModal') {
+        $('#detailedContentModal').hide();
+      }
+    });
+  });
+</script>
+
+
+<script>
+  $(document).ready(function(){
+    // Deschide fereastra modală când se apasă pe butonul "Citește mai mult"
+    $('.read-more-btn-disc').click(function(){
+      // Aici poți modifica conținutul în funcție de necesități
+      var detailedContent = '<h2>Disciplină și Respect în Karate Kyokushin</h2>' +
+        '<p>Karate Kyokushin a fost fondat de către Masutatsu Oyama (1923-1994), un maestru japonez de arte marțiale cunoscut pentru abordarea sa riguroasă și filozofia sa puternică. Oyama a început să practice arte marțiale la o vârstă fragedă, iar mai târziu a dezvoltat stilul Kyokushin, care se traduce aproximativ ca "calea adevărului ultim".</p>' +
+        '<p>Stilul Kyokushin este remarcat pentru antrenamentele sale intense, care pun accent pe rezistența fizică, forța mentală și tehnicile puternice de luptă. Oyama a fost un susținător puternic al ideii că disciplina și respectul față de adversari, instructori și principiile morale sunt la fel de importante ca și dezvoltarea abilităților fizice.</p>' +
+        '<h3></h3>' +
+        '<h3>Disciplina în Karate Kyokushin</h3>' +
+        '<p>Disciplina în Karate Kyokushin nu se referă doar la respectarea regulilor și instrucțiunilor în timpul antrenamentelor sau competițiilor, ci și la auto-disciplină. Practicanții sunt învățați să respecte un cod strict de conduită, care include:</p>' +
+        '<ul>' +
+        '<li>Respectul față de instructori și seniori: Elevii sunt învățați să respecte în mod profund experiența și cunoștințele instructorilor lor, urmând instrucțiunile acestora fără ezitare.</li>' +
+        '<li>Respectul față de adversari: Într-o competiție sau într-o sesiune de antrenament, respectul față de adversar este fundamental. Este o formă de recunoaștere a efortului și a dedicării fiecărui participant.</li>' +
+        '<h3></h3>' +
+        '<li>Respectul față de tradiții și valori: Karate Kyokushin are o istorie și o tradiție profundă, iar respectarea acestora este esențială pentru a păstra integritatea și autenticitatea stilului.</li>' +
+        '</ul>' +
+        '<p>Disciplina în Karate Kyokushin nu este doar un set de reguli externe, ci o cale de a dezvolta caracterul și integritatea personală a practicanților.</p>' +
+        '<h3>Respectul în Karate Kyokushin</h3>' +
+        '<h3></h3>' +
+        '<p>Respectul este un pilon al filozofiei Kyokushin și se manifestă în mai multe aspecte ale practicii:</p>' +
+        '<ul>' +
+        '<li>Respectul față de propria persoană: Practicanții sunt încurajați să își respecte propria persoană, să își dezvolte abilitățile și să își depășească limitele proprii.</li>' +
+        '<li>Respectul față de adversar: În timpul luptelor și al antrenamentelor, respectul față de adversar este fundamental. Acesta include recunoașterea efortului, curajului și abilităților adversarului.</li>' +
+        '<li>Respectul față de tradiții și istorie: Karate Kyokushin își are rădăcinile în tradițiile japoneze ale artelor marțiale, iar respectul față de aceste tradiții este esențial pentru a păstra integritatea și valorile stilului.</li>' +
+        '</ul>' +
+        '<h3></h3>' +
+        '<p>În concluzie, disciplina și respectul în Karate Kyokushin nu sunt doar componente ale antrenamentului fizic, ci și ale dezvoltării personale și spirituale a practicanților. Aceste principii fundamentale contribuie la formarea unui caracter puternic și la cultivarea unei atitudini pozitive față de sine și față de ceilalți în cadrul comunității Kyokushin.</p>';
+
+      // Setează conținutul în fereastra modală
+      $('.detailed-content').html(detailedContent);
+
+      // Deschide fereastra modală
+      $('#detailedContentModal').show();
+    });
+
+    // Închide fereastra modală când se apasă pe butonul "Închide" sau în afara ferestrei
+    $('.close').click(function(){
+      $(this).parents('.modal').hide();
+    });
+
+    $(window).click(function(event) {
+      if (event.target.id === 'detailedContentModal') {
+        $('#detailedContentModal').hide();
+      }
+    });
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+
+    // Conținut detaliat pentru fiecare buton
+    var detailedContents = {
+      'btn-dojo': '<h2>Sali de antrenament</h2>' +
+        '<ul>' +
+        '<li><strong>HOMBU DOJO - sediul central</strong><br>Bul. Dorobanți nr. 404, Brăila</li>' +
+        '<li><strong>SALA DE SPORT STR. CONSTRUCTORILOR GALAȚI</strong><br>(Lângă magazinul Profy)</li>' +
+        '<li><strong>ȘCOALA GIMNAZIALĂ NR. 9</strong><br>Str. Bărboși nr. 3, Micro 17, Galați</li>' +
+        '</ul>',
+      'btn-kimono': '<h2>Kimono</h2>' +
+        '<p>Kimono este o îmbrăcăminte tradițională japoneză, utilizată în special în ceremonii și arte marțiale.</p>' +
+        '<p>Este compus dintr-o jachetă lungă și pantaloni largi, fiind confecționat din materiale naturale precum bumbacul.</p>' +
+        '<p>Kimono-ul poate varia în funcție de ocazie și este adesea purtat cu accesorii specifice, cum ar fi obi-ul (cureaua).</p>',
+      'btn-obi': '<h2>Obi</h2>' +
+        '<p>Obi este o centură largă și îmbrăcată peste kimono în arte marțiale japoneze pentru a indica nivelul de competență al purtătorului.</p>' +
+        '<p>Este realizat din materiale rezistente și poate avea diferite culori și modele, semnificând diferite grade de învățătură și experiență.</p>' +
+        '<p>Obi-ul este un simbol important în arte marțiale, reflectând progresul și disciplina practicantului.</p>',
+      'btn-focus_pads': '<h2>Focus Pads</h2>' +
+        '<p>Focus Pads sunt accesorii utilizate în antrenamentele de arte marțiale și box pentru a îmbunătăți tehnica, viteza și puterea loviturilor.</p>' +
+        '<p>Acestea sunt realizate din materiale rezistente, adesea cu un strat de spumă absorbantă pentru a proteja mâinile și încheieturile atunci când sunt folosite.</p>' +
+        '<p>Focus Pads sunt esențiale în dezvoltarea preciziei și a reflexelor în timpul antrenamentelor de luptă.</p>',
+      'btn-makiwara': '<h2>Makiwara</h2>' +
+        '<p>Makiwara este un instrument tradițional japonez folosit în antrenamentele de arte marțiale, în special în karate.</p>' +
+        '<p>Este format dintr-o bară de lemn fixată vertical și o suprafață elastică, acoperită cu o țesătură sau o piele specială pentru a absorbi impactul lovirilor repetate.</p>' +
+        '<p>Makiwara este utilizat pentru a dezvolta puterea, precizia și tehnicile corecte ale loviturilor în arte marțiale.</p>',
+      'btn-striking_platform': '<h2>Striking Platform (Kakato Otoshi)</h2>' +
+        '<p>Striking Platform este o platformă utilizată în antrenamentele de karate kyokushin pentru dezvoltarea puterii și tehnicii lovirilor cu piciorul.</p>' +
+        '<p>Este esențială în exersarea loviturilor și concentrării pe tehnicile de picior și lovituri cu călcâiul.</p>',
+      'btn-sparring_gear': '<h2>Sparring Gear (Bogu)</h2>' +
+        '<p>Sparring Gear este echipamentul de protecție folosit în arte marțiale japoneze, inclusiv în karate kyokushin.</p>' +
+        '<p>Includ componente precum men (cască), kote (mănuși), dou (plastron) și tare (centură).</p>' +
+        '<p>Oferă protecție și siguranță în timpul antrenamentelor de sparring, permițând practicanților să exerseze tehnicile în condiții controlate.</p>'
+    };
+
+    // Funcția pentru afișarea conținutului detaliat la apăsarea butoanelor
+    $('.buttons a').click(function(event) {
+      event.preventDefault(); // Oprim comportamentul implicit al legăturii
+
+      var buttonId = $(this).attr('id'); // Obținem id-ul butonului apăsat
+      var content = detailedContents[buttonId]; // Obținem conținutul asociat id-ului butonului
+
+      // Setează conținutul în fereastra modală
+      $('.detailed-content').html(content);
+
+      // Deschide fereastra modală
+      $('#detailedContentModal').show();
+    });
+
+    // Închide fereastra modală când se apasă pe butonul "Închide" sau în afara ferestrei
+    $('.close, #detailedContentModal').click(function(){
+      $('#detailedContentModal').hide();
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
